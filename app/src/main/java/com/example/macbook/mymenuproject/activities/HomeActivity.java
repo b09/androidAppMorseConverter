@@ -1,9 +1,14 @@
 package com.example.macbook.mymenuproject.activities;
 
 import android.content.Intent;
+import android.support.design.widget.NavigationView;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.GridLayout;
 
@@ -18,6 +23,8 @@ import com.example.macbook.mymenuproject.activities.morse.MorseToAlphaActivity;
 public class HomeActivity extends AppCompatActivity {
 
     GridLayout gridLayout;
+    DrawerLayout mDrawerLayout;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +34,29 @@ public class HomeActivity extends AppCompatActivity {
         gridLayout = (GridLayout) findViewById(R.id.gridlayout);
         cardViewSelectable(gridLayout);
 
+        mDrawerLayout = findViewById(R.id.drawer_layout);
 
+        NavigationView navigationView = findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(
+                new NavigationView.OnNavigationItemSelectedListener() {
+                    @Override
+                    public boolean onNavigationItemSelected(MenuItem menuItem) {
+                        // set item as selected to persist highlight
+                        menuItem.setChecked(true);
+                        // close drawer when item is tapped
+                        mDrawerLayout.closeDrawers();
+
+                        // Add code here to update the UI based on the item selected
+                        // For example, swap UI fragments here
+
+                        return true;
+                    }
+                });
     }
+
+
+
+
 
     private void cardViewSelectable(GridLayout gridLayout) {
         for (int i = 0 ; i < gridLayout.getChildCount(); i++ ) {
@@ -61,5 +89,28 @@ public class HomeActivity extends AppCompatActivity {
                 }
             });
         }
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.activity_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.nav_home) {
+            Intent intent = new Intent(HomeActivity.this, MorseToAlphaActivity.class);
+            startActivity(intent);
+            return true;
+        } else if (item.getItemId() == R.id.nav_home) {
+            Intent intent = new Intent(HomeActivity.this, HebrewToAlphaActivity.class);
+            startActivity(intent);
+
+            return super.onOptionsItemSelected(item);
+        }
+        return true;
     }
 }

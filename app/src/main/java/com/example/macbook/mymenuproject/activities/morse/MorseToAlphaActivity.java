@@ -1,5 +1,6 @@
 package com.example.macbook.mymenuproject.activities.morse;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -13,6 +14,8 @@ import android.widget.Toast;
 
 import com.example.macbook.mymenuproject.MorseAlphaTranslator;
 import com.example.macbook.mymenuproject.R;
+import com.example.macbook.mymenuproject.activities.HomeActivity;
+import com.example.macbook.mymenuproject.activities.hebrew.HebrewToAlphaActivity;
 
 public class MorseToAlphaActivity extends AppCompatActivity {
 
@@ -74,19 +77,32 @@ public class MorseToAlphaActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
-        menuInflater.inflate(R.menu.activity_main, menu);
+        menuInflater.inflate(R.menu.activity_in_tranlator_activities, menu);
         return true;
     }
 
-
-
-    //        this will get called when the menu item gets clicked
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.action_hello) {
-            Toast.makeText(MorseToAlphaActivity.this, R.string.menu_toast_hello, Toast.LENGTH_LONG).show();
-        return true;
+        if (item.getItemId() == R.id.nav_home) {
+            Intent intent = new Intent(MorseToAlphaActivity.this, HomeActivity.class);
+            startActivity(intent);
+            return true;
+        } else if (item.getItemId() == R.id.nav_keys) {
+            Intent intent = new Intent(MorseToAlphaActivity.this, HomeActivity.class);
+            startActivity(intent);
+
+            return super.onOptionsItemSelected(item);
+        } else if (item.getItemId() == R.id.nav_save) {
+            Intent intent = new Intent(MorseToAlphaActivity.this, HomeActivity.class);
+            startActivity(intent);
+
+            return super.onOptionsItemSelected(item);
+        } else if (item.getItemId() == R.id.nav_view_saved) {
+            Intent intent = new Intent(MorseToAlphaActivity.this, HomeActivity.class);
+            startActivity(intent);
+
+            return super.onOptionsItemSelected(item);
         }
-        return super.onOptionsItemSelected(item);
+        return true;
     }
 }

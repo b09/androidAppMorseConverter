@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">MyMenuProject</string>
+    <string name="app_name">Morse Converter App</string>
     <string name="say_hello">Hello!</string>
     <string name="menu_toast_hello">Success!</string>
     <string name="text_to_convert">Type your message here!</string>
-    <string name="converted_message">Message translation is ...</string>
+    <string name="converted_message">banana</string>
     <string name="period_button">Period</string>
     <string name="dash_button">Dash</string>
     <string name="space_button">Space</string>
@@ -11,11 +11,8 @@
     <string name="convert_button_long">Convert Your Message</string>
     <string name="one_button">One</string>
     <string name="zero_button">Zero</string>
-    <string name="title_activity_navigation">NavigationActivity</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+    <string name="navigation_home">Home</string>
+    <string name="navigation_save">Save</string>
+    <string name="navigation_view_saved">View Saved</string>
+    <string name="navigation_view_keys">View Lang Key</string>
 </resources>
