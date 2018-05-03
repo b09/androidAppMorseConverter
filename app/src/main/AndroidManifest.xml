@@ -26,6 +26,7 @@
         <activity android:name=".activities.binary.BinaryToAlphaActivity" />
         <activity android:name=".activities.hebrew.AlphaToHebrewActivity" />
         <activity android:name=".activities.hebrew.HebrewToAlphaActivity" />
+        <activity android:name=".activities.keys.KeyBinaryActivity"></activity>
     </application>
 
 </manifest>

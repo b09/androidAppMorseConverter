@@ -31,10 +31,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:text="Layout of App"
+                android:text="Translator App"
 
                 android:textColor="@android:color/white"
-                android:textSize="30sp" />
+                android:textSize="36sp" />
 
 
         </RelativeLayout>
@@ -42,7 +42,7 @@
         <GridLayout
             android:id="@+id/gridlayout"
             android:layout_width="match_parent"
-            android:layout_height="400dp"
+            android:layout_height="470dp"
             android:layout_weight="8"
             android:alignmentMode="alignMargins"
             android:columnCount="2"
@@ -120,13 +120,13 @@
                         android:src="@drawable/abc_image" />
 
                     <!--<TextView-->
-                        <!--android:layout_width="wrap_content"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:text="Test1"-->
-                        <!--android:textAlignment="center"-->
-                        <!--android:textColor="@android:color/holo_blue_dark"-->
-                        <!--android:textSize="18sp"-->
-                        <!--android:textStyle="bold" />-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Test1"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:textColor="@android:color/holo_blue_dark"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:textStyle="bold" />-->
 
                 </LinearLayout>
 
@@ -162,13 +162,13 @@
                         android:src="@drawable/binary2" />
 
                     <!--<TextView-->
-                        <!--android:layout_width="wrap_content"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:text="Test1"-->
-                        <!--android:textAlignment="center"-->
-                        <!--android:textColor="@android:color/holo_blue_dark"-->
-                        <!--android:textSize="18sp"-->
-                        <!--android:textStyle="bold" />-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Test1"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:textColor="@android:color/holo_blue_dark"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:textStyle="bold" />-->
 
                 </LinearLayout>
 
@@ -203,13 +203,13 @@
                         android:src="@drawable/abc_image" />
 
                     <!--<TextView-->
-                        <!--android:layout_width="wrap_content"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:text="Test1"-->
-                        <!--android:textAlignment="center"-->
-                        <!--android:textColor="@android:color/holo_blue_dark"-->
-                        <!--android:textSize="18sp"-->
-                        <!--android:textStyle="bold" />-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Test1"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:textColor="@android:color/holo_blue_dark"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:textStyle="bold" />-->
 
                 </LinearLayout>
 
@@ -245,13 +245,13 @@
                         android:src="@drawable/aleph_blue" />
 
                     <!--<TextView-->
-                        <!--android:layout_width="wrap_content"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:text="Test1"-->
-                        <!--android:textAlignment="center"-->
-                        <!--android:textColor="@android:color/holo_blue_dark"-->
-                        <!--android:textSize="18sp"-->
-                        <!--android:textStyle="bold" />-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Test1"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:textColor="@android:color/holo_blue_dark"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:textStyle="bold" />-->
 
                 </LinearLayout>
 
@@ -286,13 +286,13 @@
                         android:src="@drawable/abc_image" />
 
                     <!--<TextView-->
-                        <!--android:layout_width="wrap_content"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:text="Test1"-->
-                        <!--android:textAlignment="center"-->
-                        <!--android:textColor="@android:color/holo_blue_dark"-->
-                        <!--android:textSize="18sp"-->
-                        <!--android:textStyle="bold" />-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Test1"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:textColor="@android:color/holo_blue_dark"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:textStyle="bold" />-->
 
                 </LinearLayout>
 

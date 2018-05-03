@@ -1,4 +1,4 @@
-package com.example.macbook.mymenuproject.activities.binary;
+package com.example.macbook.mymenuproject.activities.keys;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,38 +6,20 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.macbook.mymenuproject.MorseAlphaTranslator;
 import com.example.macbook.mymenuproject.R;
 import com.example.macbook.mymenuproject.activities.HomeActivity;
-import com.example.macbook.mymenuproject.activities.keys.KeyBinaryActivity;
-import com.example.macbook.mymenuproject.activities.morse.MorseToAlphaActivity;
 
-public class AlphaToBinaryActivity extends AppCompatActivity {
+public class KeyBinaryActivity extends AppCompatActivity {
 
-    private TextView inputText;
     private TextView outputText;
-    private Button convert;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_alpha_to_binary);
-        inputText = findViewById(R.id.userInput);
+        setContentView(R.layout.activity_key_binary);
         outputText = findViewById(R.id.translatedText);
-        convert = findViewById(R.id.translateButton);
-
-        convert.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String untranslatedText = inputText.getText().toString();
-                String tranlatedText = MorseAlphaTranslator.alphaToBinary(untranslatedText);
-                outputText.setText(tranlatedText);
-            }
-        });
 
     }
 
@@ -51,21 +33,21 @@ public class AlphaToBinaryActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.nav_home) {
-            Intent intent = new Intent(AlphaToBinaryActivity.this, HomeActivity.class);
+            Intent intent = new Intent(KeyBinaryActivity.this, HomeActivity.class);
             startActivity(intent);
             return true;
         } else if (item.getItemId() == R.id.nav_keys) {
-            Intent intent = new Intent(AlphaToBinaryActivity.this, KeyBinaryActivity.class);
+            Intent intent = new Intent(KeyBinaryActivity.this, HomeActivity.class);
             startActivity(intent);
 
             return super.onOptionsItemSelected(item);
         } else if (item.getItemId() == R.id.nav_save) {
-            Intent intent = new Intent(AlphaToBinaryActivity.this, HomeActivity.class);
+            Intent intent = new Intent(KeyBinaryActivity.this, HomeActivity.class);
             startActivity(intent);
 
             return super.onOptionsItemSelected(item);
         } else if (item.getItemId() == R.id.nav_view_saved) {
-            Intent intent = new Intent(AlphaToBinaryActivity.this, HomeActivity.class);
+            Intent intent = new Intent(KeyBinaryActivity.this, HomeActivity.class);
             startActivity(intent);
 
             return super.onOptionsItemSelected(item);
@@ -73,5 +55,3 @@ public class AlphaToBinaryActivity extends AppCompatActivity {
         return true;
     }
 }
-
-

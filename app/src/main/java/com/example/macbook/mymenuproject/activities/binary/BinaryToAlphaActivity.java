@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.example.macbook.mymenuproject.MorseAlphaTranslator;
 import com.example.macbook.mymenuproject.R;
 import com.example.macbook.mymenuproject.activities.HomeActivity;
+import com.example.macbook.mymenuproject.activities.keys.KeyBinaryActivity;
 import com.example.macbook.mymenuproject.activities.morse.MorseToAlphaActivity;
 
 public class BinaryToAlphaActivity extends AppCompatActivity {
@@ -81,7 +82,7 @@ public class BinaryToAlphaActivity extends AppCompatActivity {
             startActivity(intent);
             return true;
         } else if (item.getItemId() == R.id.nav_keys) {
-            Intent intent = new Intent(BinaryToAlphaActivity.this, HomeActivity.class);
+            Intent intent = new Intent(BinaryToAlphaActivity.this, KeyBinaryActivity.class);
             startActivity(intent);
 
             return super.onOptionsItemSelected(item);

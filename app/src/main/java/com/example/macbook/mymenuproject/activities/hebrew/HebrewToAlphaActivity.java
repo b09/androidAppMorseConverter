@@ -43,7 +43,7 @@ public class HebrewToAlphaActivity extends AppCompatActivity {
                 outputText.setText(tranlatedText);
             }
         });
-        
+
 
     }
 
