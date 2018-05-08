@@ -27,7 +27,7 @@ public class TranslatorTest {
 
 //    @Test
 //    public void canGetAlphaFromMorse() {
-//        String alpha = MorseAlphaTranslator.morseToAlpha(".... . .-.. .-.. ---   .-- --- .-. .-.. -.. ---.  ");
+    //        String alpha = MorseAlphaTranslator.morseToAlpha(".... . .-.. .-.. ---   .-- --- .-. .-.. -.. ---.  ");
 //        assertEquals("this is an example ", alpha);
 //    }
 

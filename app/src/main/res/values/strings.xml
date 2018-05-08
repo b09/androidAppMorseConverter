@@ -2,8 +2,8 @@
     <string name="app_name">Morse Converter App</string>
     <string name="say_hello">Hello!</string>
     <string name="menu_toast_hello">Success!</string>
-    <string name="text_to_convert">Type your message here!</string>
-    <string name="converted_message">banana</string>
+    <string name="text_to_convert">Type your Irene secret!</string>
+    <string name="converted_message">Your tranlated message is...</string>
     <string name="period_button">Period</string>
     <string name="dash_button">Dash</string>
     <string name="space_button">Space</string>

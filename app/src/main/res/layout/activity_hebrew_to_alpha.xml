@@ -33,7 +33,7 @@
         android:ems="10"
         android:hint="@string/converted_message"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textSize="36sp"
         tools:layout_editor_absoluteX="30dp"
         tools:layout_editor_absoluteY="184dp" />
 

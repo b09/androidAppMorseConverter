@@ -23,19 +23,19 @@ android:background="@drawable/rosetta_stone"
     android:textAlignment="center"
     android:textSize="36sp" />
 
-<TextView
-    android:id="@+id/translatedText"
-    android:layout_width="328dp"
-    android:layout_height="150dp"
-    android:layout_centerHorizontal="true"
-    android:layout_marginTop="230dp"
-    android:background="#ccc9f6f0"
-    android:ems="10"
-    android:hint="@string/converted_message"
-    android:textAlignment="center"
-    android:textSize="20sp"
-    tools:layout_editor_absoluteX="30dp"
-    tools:layout_editor_absoluteY="184dp" />
+    <TextView
+        android:id="@+id/translatedText"
+        android:layout_width="328dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:background="#ccc9f6f0"
+        android:ems="10"
+        android:hint="@string/converted_message"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="184dp" />
 
 <LinearLayout
     android:layout_width="wrap_content"
